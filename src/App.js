@@ -1,9 +1,10 @@
+import Intro from "./components/intro/Intro";
 
 
 function App() {
   return (
     <>
-      <div>App root</div>
+      <Intro/>
     </>
   );
 }
