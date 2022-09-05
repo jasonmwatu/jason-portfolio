@@ -1,5 +1,5 @@
 import "./intro.css";
-import Me from "../../img/me.jpg";
+// import Me from "../../img/me.jpg";
 
 function Intro() {
   return (
