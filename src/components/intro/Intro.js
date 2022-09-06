@@ -1,6 +1,6 @@
 import "./intro.css";
 import {useSelector} from 'react-redux';
-import MeDark from "../../img/meBw500.png";
+import MeDark from "../../img/meBw500edge.png";
 
 function Intro() {
   const darkMode = useSelector(state => state.ui.darkMode);

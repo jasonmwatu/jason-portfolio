@@ -1,5 +1,6 @@
 import "./about.css";
 import Award from "../../img/award.png";
+import about from "../../img/about.jpg"
 
 const About = () => {
   return (
@@ -8,7 +9,7 @@ const About = () => {
         <div className="a-card bg"></div>
         <div className="a-card">
           <img
-            src="https://images.pexels.com/photos/3585047/pexels-photo-3585047.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+            src={about}
             alt=""
             className="a-img"
           />
