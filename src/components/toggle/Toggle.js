@@ -4,22 +4,30 @@ import Moon from "../../img/moon.png";
 // import { useContext } from "react";
 // import { ThemeContext } from "../../context";
 
+import { useDispatch, useSelector } from "react-redux";
+import { uiActions } from '../../store/index';
+
 const Toggle = () => {
   // const theme = useContext(ThemeContext);
-  const theme = false;
+  const dispatch = useDispatch();
+  const darkMode = useSelector(state => state.ui.darkMode)
 
-  const handleClick = () => {
-    // theme.dispatch({ type: "TOGGLE" });
-    console.log("change theme");
-  };
+  const toggleDarkMode = () => {
+    dispatch(uiActions.toggle())
+  }
+
+  // const handleClick = () => {
+  //   // theme.dispatch({ type: "TOGGLE" });
+  //   console.log("change theme");
+  // };
   return (
     <div className="t">
       <img src={Sun} alt="" className="t-icon" />
       <img src={Moon} alt="" className="t-icon" />
       <div
         className="t-button"
-        onClick={handleClick}
-        style={{ left: theme ? 0 : 25 }}
+        onClick={toggleDarkMode}
+        style={{ left: darkMode ? 0 : 25 }}
       ></div>
     </div>
   );

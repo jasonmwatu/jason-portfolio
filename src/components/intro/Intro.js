@@ -1,7 +1,10 @@
 import "./intro.css";
+import {useSelector} from 'react-redux';
 // import Me from "../../img/me.jpg";
 
 function Intro() {
+  const darkMode = useSelector(state => state.ui.darkMode);
+
   return (
     <div className="i">
       <div className="i-left">
@@ -27,7 +30,7 @@ function Intro() {
           height="75"
           viewBox="0 0 75 75"
           fill="none"
-          stroke="black"
+          stroke={darkMode ? "white" : "black"}
           className="i-scroll"
           xmlns="http://www.w3.org/2000/svg"
         >
