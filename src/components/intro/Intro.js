@@ -12,12 +12,13 @@ function Intro() {
         <div className="i-left-wrapper">
           <h2 className="i-intro">Hello, My name is</h2>
           <h2 className="i-name">Jason Mwatu</h2>
+          <h2 className="i-intro">I am a...</h2>
           <div className="i-title">
             <div className="i-title-wrapper">
               <div className="i-title-item">Web Developer (Full Stack)</div>
-              <div className="i-title-item">WordPress</div>
+              <div className="i-title-item">WordPress Expert</div>
               <div className="i-title-item">Mobile App Developer</div>
-              <div className="i-title-item">Web Design (UI/UX)</div>
+              <div className="i-title-item">Web Designer (UI/UX)</div>
             </div>
           </div>
           <p className="i-desc">
@@ -27,7 +28,7 @@ function Intro() {
             Let me help you bring your dream idea to life. I specialize in creating stylish, modern websites, web
             services, mobile apps and online stores.
           </p>
-          <button className="i-CTA"> Bring Your Idea to Life </button>
+          <button className="i-CTA"> My Work </button>
         </div>
         <svg
           width="75"
@@ -35,7 +36,7 @@ function Intro() {
           viewBox="0 0 75 75"
           fill="none"
           stroke={darkMode ? "white" : "black"}
-          className="i-scroll"
+          className="i-scroll bounce"
           xmlns="http://www.w3.org/2000/svg"
         >
           <g id="scroll">
