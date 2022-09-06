@@ -1,6 +1,5 @@
 import "./intro.css";
 import {useSelector} from 'react-redux';
-import Me from "../../img/meColor500.png";
 import MeDark from "../../img/meBw500.png";
 
 function Intro() {
@@ -15,10 +14,10 @@ function Intro() {
           <h2 className="i-intro">I am a...</h2>
           <div className="i-title">
             <div className="i-title-wrapper">
-              <div className="i-title-item">Web Developer (Full Stack)</div>
+              <div className="i-title-item">Web Developer</div>
+              <div className="i-title-item">Web Designer (UI/UX)</div>
               <div className="i-title-item">WordPress Expert</div>
               <div className="i-title-item">Mobile App Developer</div>
-              <div className="i-title-item">Web Designer (UI/UX)</div>
             </div>
           </div>
           <p className="i-desc">
@@ -89,7 +88,7 @@ function Intro() {
       </div>
       <div className="i-right">
         <div className="i-bg"></div>
-        <img src={darkMode ? Me : MeDark} alt="jason mwatu" className="i-img" />
+        <img src={MeDark} alt="jason mwatu" className="i-img" />
       </div>
     </div>
   );
