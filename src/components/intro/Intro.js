@@ -25,9 +25,9 @@ function Intro() {
             specializing in creating stylish, modern websites, web services and
             online stores. */}
             Let me help you bring your dream idea to life. I specialize in creating stylish, modern websites, web
-            services, mobile apps and online stores.
+            services, mobile apps and online stores. Are you interested in setting up your own website or mobile app?
           </p>
-          <button className="i-CTA"> My Work </button>
+          <button className="i-CTA" style={{width: "50%"}}> Let Me Help </button>
         </div>
         <svg
           width="75"

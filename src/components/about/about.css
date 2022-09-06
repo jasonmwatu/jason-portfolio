@@ -82,16 +82,17 @@
     }
 
     .a-left {
-      width: 100%;
+      /* width: 100%; */
+      display: none;
     }
 
-    .a-card {
+    /* .a-card {
       height: 30vh;
     }
 
     .a-card.bg, .a-award {
       display: none;
-    }
+    } */
 
     .a-right{
       padding: 20px;

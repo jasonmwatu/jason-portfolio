@@ -6,7 +6,7 @@ const ProductList = () => {
   return (
     <div className="pl">
       <div className="pl-texts">
-        <h1 className="pl-title">Beautiful & inspirational.</h1>
+        <h1 className="pl-title">Beautiful & inspirational</h1>
         <p className="pl-desc">
           I have had the opportunity to work with great clients on a variety
           of projects. Here are a few examples of websites I have developed.
