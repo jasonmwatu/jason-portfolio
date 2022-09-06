@@ -41,6 +41,10 @@
   height: 100%;
   animation: move 10s ease-in-out infinite alternate;
 }
+.i-CTA {
+  font-size: 20px;
+  margin-top: 8px;
+}
 
 @keyframes move {
   33% {

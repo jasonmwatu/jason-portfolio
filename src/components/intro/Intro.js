@@ -1,6 +1,7 @@
 import "./intro.css";
 import {useSelector} from 'react-redux';
-// import Me from "../../img/me.jpg";
+import Me from "../../img/meColor500.png";
+import MeDark from "../../img/meBw500.png";
 
 function Intro() {
   const darkMode = useSelector(state => state.ui.darkMode);
@@ -13,20 +14,20 @@ function Intro() {
           <h2 className="i-name">Jason Mwatu</h2>
           <div className="i-title">
             <div className="i-title-wrapper">
-              <div className="i-title-item">React Front-End Developer</div>
-              <div className="i-title-item">PHP Back-End Developer</div>
-              <div className="i-title-item">Python Enthusiast</div>
-              <div className="i-title-item">Future Ruby Magician 🐱‍🏍</div>
+              <div className="i-title-item">Web Developer (Full Stack)</div>
+              <div className="i-title-item">WordPress</div>
+              <div className="i-title-item">Mobile App Developer</div>
+              <div className="i-title-item">Web Design (UI/UX)</div>
             </div>
           </div>
           <p className="i-desc">
             {/* I design and develop services for customers of all sizes,
             specializing in creating stylish, modern websites, web services and
             online stores. */}
-            I will plan and design your website, no matter the size, together
-            with you. I specialize in creating stylish, modern websites, web
-            services and online stores.
+            Let me help you bring your dream idea to life. I specialize in creating stylish, modern websites, web
+            services, mobile apps and online stores.
           </p>
+          <button className="i-CTA"> Bring Your Idea to Life </button>
         </div>
         <svg
           width="75"
@@ -87,7 +88,7 @@ function Intro() {
       </div>
       <div className="i-right">
         <div className="i-bg"></div>
-        {/* <img src={Me} alt="jason mwatus picture" className="i-img" /> */}
+        <img src={darkMode ? Me : MeDark} alt="jason mwatu" className="i-img" />
       </div>
     </div>
   );
