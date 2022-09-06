@@ -6,11 +6,11 @@ const ProductList = () => {
   return (
     <div className="pl">
       <div className="pl-texts">
-        <h1 className="pl-title">Create & inspire. It's Lama</h1>
+        <h1 className="pl-title">Beautiful & inspirational.</h1>
         <p className="pl-desc">
-          Lama is a creative portfolio that your work has been waiting for.
-          Beautiful homes, stunning portfolio styles & a whole lot more awaits
-          inside.
+          I have had the opportunity to work with great clients on a variety
+          of projects. Here are a few examples of websites I have developed.
+          Yours could be the next one.
         </p>
       </div>
       <div className="pl-list">
