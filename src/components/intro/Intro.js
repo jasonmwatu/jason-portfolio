@@ -27,7 +27,7 @@ function Intro() {
             Let me help you bring your dream idea to life. I specialize in creating stylish, modern websites, web
             services, mobile apps and online stores. Are you interested in setting up your own website or mobile app?
           </p>
-          <button className="i-CTA" style={{width: "50%"}}> Let Me Help </button>
+          <button className="i-CTA" style={{width: "50%"}}> Let's Talk </button>
         </div>
         <svg
           width="75"
