@@ -9,7 +9,8 @@
 
 .p-browser {
   height: 20px;
-  background-color: rgb(243, 242, 242);
+  /* background-color: rgb(243, 242, 242); */
+  background-color: darkgray;
   display: flex;
   align-items: center;
   justify-content: flex-end;
