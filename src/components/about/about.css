@@ -37,12 +37,12 @@
   height: 100%;
   object-fit: cover;
 }
-
+/* 
 .a-award-img {
   width: 120px;
   height: 120px;
   border-radius: 20px;
-}
+} */
 
 .a-title {
   font-size: 50px;
@@ -57,7 +57,7 @@
     font-weight: 300;
 }
 
-.a-award{
+/* .a-award{
     margin-top: 50px;
     display: flex;
     align-items: center;
@@ -72,13 +72,14 @@
     font-weight: bold;
     color: #555;
     margin-bottom: 10px;
-}
+} */
 
 @media screen and (max-width:720px) {
     .a{
       flex-direction: column;
       text-align: center;
       margin-top: 50px;
+      height: 75vh;
     }
 
     .a-left {

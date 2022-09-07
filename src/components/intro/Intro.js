@@ -1,6 +1,6 @@
 import "./intro.css";
 import {useSelector} from 'react-redux';
-import MeDark from "../../img/meBw500edge.png";
+import Hero from "../../img/hero5.jpg";
 
 function Intro() {
   const darkMode = useSelector(state => state.ui.darkMode);
@@ -88,7 +88,17 @@ function Intro() {
       </div>
       <div className="i-right">
         <div className="i-bg"></div>
-        <img src={MeDark} alt="jason mwatu" className="i-img" />
+        {/* <img src={MeDark} alt="jason mwatu" className="i-img" /> */}
+        
+        <div className="i-card bg"></div>
+        <div className="i-card">
+          <img
+            src={Hero}
+            alt=""
+            className="i-card-img"
+          />
+        </div>
+      
       </div>
     </div>
   );
