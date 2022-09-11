@@ -1,3 +1,4 @@
+import AnchorLink from "react-anchor-link-smooth-scroll";
 import "./intro.css";
 import {useSelector} from 'react-redux';
 import Hero from "../../img/hero5.jpg";
@@ -27,7 +28,9 @@ function Intro() {
             Let me help you bring your dream idea to life. I specialize in creating stylish, modern websites, web
             services, mobile apps and online stores. Are you interested in setting up your own website or mobile app?
           </p>
+          <AnchorLink href='#contact-form'>
           <button className="i-CTA" style={{width: "50%"}}> Let's Talk </button>
+          </AnchorLink>
         </div>
         <svg
           width="75"
@@ -42,45 +45,45 @@ function Intro() {
             <path
               id="Vector"
               d="M40.5 15L34.5 9L28.5 15"
-              stroke-width="3"
-              stroke-miterlimit="10"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeWidth="3"
+              strokeMiterlimit="10"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             />
             <path
               id="Vector_2"
               d="M28.5 24L34.5 30L40.5 24"
-              stroke-width="3"
-              stroke-miterlimit="10"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeWidth="3"
+              strokeMiterlimit="10"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             />
             <g id="Group">
               <path
                 id="Vector_3"
                 d="M9 37.5H60"
-                stroke-width="3"
-                stroke-miterlimit="10"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="3"
+                strokeMiterlimit="10"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               />
             </g>
             <path
               id="Vector_4"
               d="M34.5 27V9"
-              stroke-width="2.9895"
-              stroke-miterlimit="10"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeWidth="2.9895"
+              strokeMiterlimit="10"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             />
             <g id="Group_2">
               <path
                 id="Vector_5"
                 d="M9 27C9 12.918 20.418 1.5 34.5 1.5C48.5859 1.5 60 12.918 60 27C60 29.8906 60 45.1094 60 48C60 62.082 48.5859 73.5 34.5 73.5C20.418 73.5 9 62.082 9 48C9 45.1094 9 29.8906 9 27Z"
-                stroke-width="3"
-                stroke-miterlimit="10"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="3"
+                strokeMiterlimit="10"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               />
             </g>
           </g>

@@ -55,7 +55,7 @@ form {
 }
 
 input {
-  width: 50%;
+  width: 75%;
   height: 50px;
   border: none;
   border-bottom: 1px solid black;
@@ -105,12 +105,12 @@ button {
     flex-wrap: wrap;
   }
 
-  input {
+  /* input {
     width: 35%;
     height: 40px;
     margin: 10px;
     margin-left: 0;
-  }
+  } */
 
   button {
     margin-top: 10px;
