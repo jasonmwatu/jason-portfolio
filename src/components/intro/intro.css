@@ -51,6 +51,7 @@
 .i-CTA {
   font-size: 20px;
   margin-top: 8px;
+  width: 50%;
 }
 
 @keyframes move {
@@ -152,6 +153,9 @@
 @media screen and (max-width: 720px) {
   .i {
     flex-direction: column;
+  }
+  .i-CTA {
+    width: 100%;
   }
 
   .i-left-wrapper {

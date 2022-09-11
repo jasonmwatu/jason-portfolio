@@ -29,7 +29,7 @@ function Intro() {
             services, mobile apps and online stores. Are you interested in setting up your own website or mobile app?
           </p>
           <AnchorLink href='#contact-form'>
-          <button className="i-CTA" style={{width: "50%"}}> Let's Talk </button>
+          <button className="i-CTA"> Let's Talk </button>
           </AnchorLink>
         </div>
         <svg
