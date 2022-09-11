@@ -50,6 +50,14 @@
   font-weight: 200;
 }
 
+.c-status {
+  background-color: yellow;
+  margin-top: 16px;
+  padding: 8px;
+  width: 25%;
+  color: black;
+}
+
 form {
   margin-top: 20px;
 }
@@ -114,5 +122,8 @@ button {
 
   button {
     margin-top: 10px;
+  }
+  .c-status{
+    margin-left: 16px;
   }
 }
