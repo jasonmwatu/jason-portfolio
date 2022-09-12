@@ -21,7 +21,8 @@
 }
 .m-line {
   border-radius: 4px;
-  background-color: #1f291f;
+  /* background-color: #1f291f; */
+  background-color: rgb(105, 105, 105);
   height: 4px;
   width: 60%;
   margin-bottom: 4px;

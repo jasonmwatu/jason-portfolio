@@ -22,13 +22,13 @@ const Toggle = () => {
   // };
   return (
     <>
-      <div className="m">
+      <div className="m" style={{ boxShadow: darkMode && "0 0 1rem 0 rgba(243, 243, 243, 0.2)", backgroundColor: "rgba(194, 194, 194, 0.26)"}}>
         {/* <IoMenu style={{color: darkMode && "white", height: "4em"}}/> */}
         <span className="m-line" style={{backgroundColor: darkMode && "white"}}></span>
         <span className="m-line" style={{backgroundColor: darkMode && "white"}}></span>
         <span className="m-line" style={{backgroundColor: darkMode && "white"}}></span>
       </div>
-      <div className="t">
+      <div className="t"style={{ boxShadow: darkMode && "0 0 1rem 0 rgba(243, 243, 243, 0.2)"}}>
         <img src={Sun} alt="light mode toggle" className="t-icon" />
         <img src={Moon} alt="dark mode toggle" className="t-icon" />
         <div
