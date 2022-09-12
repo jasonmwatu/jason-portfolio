@@ -89,7 +89,13 @@ const Contact = () => {
               name="message"
               required
             />
-            <button disabled={loading} style={{backgroundColor: loading && "lightgray", color: loading && "darkgray"}}>
+            <button
+              disabled={loading}
+              style={{
+                backgroundColor: loading && "lightgray",
+                color: loading && "darkgray",
+              }}
+            >
               {done ? "Sent. Send Again?" : loading ? "Sending..." : "Send"}
             </button>
             {/* {loading && (
@@ -105,13 +111,7 @@ const Contact = () => {
                 "Sending your message..."
               </div>
             )} */}
-            {done && (
-              <div
-                className="c-status"
-              >
-                "Message Sent..."
-              </div>
-            )}
+            {done && <div className="c-status">"Message Sent..."</div>}
           </form>
         </div>
       </div>
