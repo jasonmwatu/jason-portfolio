@@ -1,28 +1,60 @@
-.t{
-    width: 50px;
-    height: 25px;
-    border-radius: 20px;
-    border: 1pz solid #999;
-    background-color: white;
-    position: fixed;
-    top: 10px;
-    right: 10px;
-    z-index: 999;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+.m {
+  width: 48px;
+  height: 28px;
+  padding-top: 4px;
+  border-radius: 8px;
+  /* border: 2px solid #6f746f; */
+  /* background-color: white; */
+  position: fixed;
+  top: 16px;
+  left: 25px;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  cursor: pointer;
+
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 0.26);
+  backdrop-filter: blur(5px);
+}
+.m-line {
+  border-radius: 4px;
+  background-color: #1f291f;
+  height: 4px;
+  width: 60%;
+  margin-bottom: 4px;
+}
+.t {
+  width: 50px;
+  height: 25px;
+  border-radius: 20px;
+  border: 1px solid #999;
+  background-color: white;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  /* backdrop-filter: blur(5px); */
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+  /* background-color: rgba(255, 255, 255, 0.616); */
 }
 
-.t-icon{
-    width: 15px;
-    height: 15px;
+.t-icon {
+  width: 15px;
+  height: 15px;
 }
 
-.t-button{
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    background-color: #999;
-    position: absolute;
-    cursor: pointer;
+.t-button {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #999;
+  position: absolute;
+  cursor: pointer;
 }

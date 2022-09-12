@@ -5,31 +5,39 @@ import Moon from "../../img/moon.png";
 // import { ThemeContext } from "../../context";
 
 import { useDispatch, useSelector } from "react-redux";
-import { uiActions } from '../../store/index';
+import { uiActions } from "../../store/index";
 
 const Toggle = () => {
   // const theme = useContext(ThemeContext);
   const dispatch = useDispatch();
-  const darkMode = useSelector(state => state.ui.darkMode)
+  const darkMode = useSelector((state) => state.ui.darkMode);
 
   const toggleDarkMode = () => {
-    dispatch(uiActions.toggle())
-  }
+    dispatch(uiActions.toggle());
+  };
 
   // const handleClick = () => {
   //   // theme.dispatch({ type: "TOGGLE" });
   //   console.log("change theme");
   // };
   return (
-    <div className="t">
-      <img src={Sun} alt="" className="t-icon" />
-      <img src={Moon} alt="" className="t-icon" />
-      <div
-        className="t-button"
-        onClick={toggleDarkMode}
-        style={{ left: darkMode ? 0 : 25 }}
-      ></div>
-    </div>
+    <>
+      <div className="m">
+        {/* <IoMenu style={{color: darkMode && "white", height: "4em"}}/> */}
+        <span className="m-line" style={{backgroundColor: darkMode && "white"}}></span>
+        <span className="m-line" style={{backgroundColor: darkMode && "white"}}></span>
+        <span className="m-line" style={{backgroundColor: darkMode && "white"}}></span>
+      </div>
+      <div className="t">
+        <img src={Sun} alt="light mode toggle" className="t-icon" />
+        <img src={Moon} alt="dark mode toggle" className="t-icon" />
+        <div
+          className="t-button"
+          onClick={toggleDarkMode}
+          style={{ left: darkMode ? 0 : 25 }}
+        ></div>
+      </div>
+    </>
   );
 };
 
