@@ -33,7 +33,8 @@ const Toggle = () => {
         onClick={toggleMenu}
         style={{
           boxShadow: darkMode && "0 0 1rem 0 rgba(243, 243, 243, 0.2)",
-          backgroundColor: "rgba(194, 194, 194, 0.26)",
+          backgroundColor: menuOpen ? "transparent" : "rgba(194, 194, 194, 0.26)",
+          // backdropFilter: menuOpen && "unset",
         }}
       >
         {/* <IoMenu style={{color: darkMode && "white", height: "4em"}}/> */}

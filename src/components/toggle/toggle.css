@@ -14,6 +14,7 @@
   justify-content: center;
   flex-direction: column;
   cursor: pointer;
+  transition: all 0.3s;
 
   box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
   background-color: rgba(255, 255, 255, 0.26);
@@ -26,7 +27,7 @@
   height: 4px;
   width: 60%;
   margin-bottom: 4px;
-  transition: all 0.3s;
+  transition: all 0.4s;
 }
 a {
   all: unset;
@@ -46,6 +47,7 @@ a {
   opacity: ${(props) => (props.clicked ? "1" : "0")}; */
 
   transition: width 0.8s, opacity 0.8s ease-in-out;
+  transition-delay: 0.2s;
 }
 .m-list {
   position: absolute;
@@ -76,7 +78,7 @@ a {
     #222 50%
   );
   background-size: 240%;
-  transition: all 0.4s ease-in-out;
+  transition: all 0.2s ease-in-out;
 
   /* &:hover,
   &:active {
