@@ -13,23 +13,23 @@ import { uiActions } from "../../store/index";
 const Toggle = () => {
   // const theme = useContext(ThemeContext);
   const [menuOpen, setMenuOpen] = useState(false);
-  const [isHover, setIsHover] = useState(false);
+  // const [isHover, setIsHover] = useState(false);
   const dispatch = useDispatch();
   const darkMode = useSelector((state) => state.ui.darkMode);
-  const [activeLink, setActiveLink] = useState("");
+  // const [activeLink, setActiveLink] = useState("");
 
   const toggleDarkMode = () => {
     dispatch(uiActions.toggle());
   };
   const toggleMenu = () => setMenuOpen(!menuOpen);
-  const handleMouseEnter = (link) => {
-    setIsHover(true);
-    setActiveLink(link);
-  };
-  const handleMouseLeave = () => {
-    setIsHover(false);
-    setActiveLink("");
-  };
+  // const handleMouseEnter = (link) => {
+  //   setIsHover(true);
+  //   setActiveLink(link);
+  // };
+  // const handleMouseLeave = () => {
+  //   setIsHover(false);
+  //   setActiveLink("");
+  // };
 
   // const handleClick = () => {
   //   // theme.dispatch({ type: "TOGGLE" });
