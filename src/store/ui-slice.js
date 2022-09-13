@@ -1,7 +1,8 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialCartState = { 
-    darkMode: false, 
+    darkMode: (Math.random() < 0.75), // 75% probability of getting true - eq to darkMode is On
+    // darkMode: false,
 };
 
 const reducerUiObjects = {
