@@ -74,16 +74,16 @@ const Toggle = () => {
       >
         <ul className="m-list">
           <li className="m-list-item" style={{ color: darkMode && "white" }}>
-            <AnchorLink href="#">Home</AnchorLink>
+            <AnchorLink href="#intro">Home</AnchorLink>
           </li>
           <li className="m-list-item" style={{ color: darkMode && "white" }}>
-          <AnchorLink href="#">About</AnchorLink>
+          <AnchorLink href="#about">About</AnchorLink>
           </li>
           <li className="m-list-item" style={{ color: darkMode && "white" }}>
-          <AnchorLink href="#">Portfolio</AnchorLink>
+          <AnchorLink href="#portfolio">Portfolio</AnchorLink>
           </li>
           <li className="m-list-item" style={{ color: darkMode && "white" }}>
-          <AnchorLink href="#">Contact Me</AnchorLink>
+          <AnchorLink href="#contact-me">Contact Me</AnchorLink>
           </li>
         </ul>
       </nav>
