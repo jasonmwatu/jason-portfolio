@@ -91,59 +91,40 @@ const Toggle = () => {
         style={{
           width: menuOpen ? "100%" : "0",
           opacity: menuOpen ? "1" : "0",
-          backgroundColor: darkMode && "#333",
+          backgroundColor: darkMode && "#222",
         }}
       >
         <ul className="m-list">
           <li
             className="m-list-item"
-            onMouseEnter={() => handleMouseEnter("home")}
-            onMouseLeave={handleMouseLeave}
-            style={{
-              color: darkMode && (isHover && activeLink==="home" ? "black" : "white"),
-              backgroundImage:
-                darkMode &&
-                "linear-gradient(120deg, transparent 0%, transparent 50%, #fff 50%)",
-            }}
+            // onMouseEnter={() => handleMouseEnter("home")}
+            // onMouseLeave={handleMouseLeave}
+            // style={{
+              // color: darkMode && (isHover && activeLink==="home" ? "black" : "white"),
+              // color: darkMode && "white",
+              // backgroundImage:
+              //   darkMode &&
+              //   "linear-gradient(120deg, transparent 0%, transparent 50%, #fff 50%)",
+            // }}
+            style={{color: darkMode && "white"}}
           >
             <AnchorLink href="#intro">Home</AnchorLink>
           </li>
           <li
             className="m-list-item"
-            onMouseEnter={() => handleMouseEnter("about")}
-            onMouseLeave={handleMouseLeave}
-            style={{
-              color: darkMode && (isHover && activeLink==="about" ? "black" : "white"),
-              backgroundImage:
-                darkMode &&
-                "linear-gradient(120deg, transparent 0%, transparent 50%, #fff 50%)",
-            }}
+            style={{color: darkMode && "white"}}
           >
             <AnchorLink href="#about">About</AnchorLink>
           </li>
           <li
             className="m-list-item"
-            onMouseEnter={() => handleMouseEnter("portfolio")}
-            onMouseLeave={handleMouseLeave}
-            style={{
-              color: darkMode && (isHover && activeLink==="portfolio" ? "black" : "white"),
-              backgroundImage:
-                darkMode &&
-                "linear-gradient(120deg, transparent 0%, transparent 50%, #fff 50%)",
-            }}
+            style={{color: darkMode && "white"}}
           >
             <AnchorLink href="#portfolio">Portfolio</AnchorLink>
           </li>
           <li
             className="m-list-item"
-            onMouseEnter={() => handleMouseEnter("contact")}
-            onMouseLeave={handleMouseLeave}
-            style={{
-              color: darkMode && (isHover && activeLink==="contact" ? "black" : "white"),
-              backgroundImage:
-                darkMode &&
-                "linear-gradient(120deg, transparent 0%, transparent 50%, #fff 50%)",
-            }}
+            style={{color: darkMode && "white"}}
           >
             <AnchorLink href="#contact-me">Contact</AnchorLink>
           </li>

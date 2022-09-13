@@ -75,7 +75,8 @@ a {
     120deg,
     transparent 0%,
     transparent 50%,
-    #222 50%
+    #59b256 50%
+    /* #222 50% */
   );
   background-size: 240%;
   transition: all 0.2s ease-in-out;
