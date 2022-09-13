@@ -45,7 +45,7 @@ a {
   /* width: ${(props) => (props.clicked ? "100%" : "0")};
   opacity: ${(props) => (props.clicked ? "1" : "0")}; */
 
-  transition: width 0.8s, opacity 0.8s;
+  transition: width 0.8s, opacity 0.8s ease-in-out;
 }
 .m-list {
   position: absolute;
@@ -57,7 +57,8 @@ a {
   text-align: center;
   width: 100%;
   display: flex;
-  flex-flow: wrap column;
+  /* flex-flow: wrap column; */
+  flex-direction: column;
 }
 .m-list-item {
   display: inline-block;
@@ -75,7 +76,7 @@ a {
     #222 50%
   );
   background-size: 240%;
-  transition: all 0.4s;
+  transition: all 0.4s ease-in-out;
 
   /* &:hover,
   &:active {
