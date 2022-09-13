@@ -13,13 +13,23 @@ import { uiActions } from "../../store/index";
 const Toggle = () => {
   // const theme = useContext(ThemeContext);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [isHover, setIsHover] = useState(false);
   const dispatch = useDispatch();
   const darkMode = useSelector((state) => state.ui.darkMode);
+  const [activeLink, setActiveLink] = useState("");
 
   const toggleDarkMode = () => {
     dispatch(uiActions.toggle());
   };
   const toggleMenu = () => setMenuOpen(!menuOpen);
+  const handleMouseEnter = (link) => {
+    setIsHover(true);
+    setActiveLink(link);
+  };
+  const handleMouseLeave = () => {
+    setIsHover(false);
+    setActiveLink("");
+  };
 
   // const handleClick = () => {
   //   // theme.dispatch({ type: "TOGGLE" });
@@ -33,22 +43,33 @@ const Toggle = () => {
         onClick={toggleMenu}
         style={{
           boxShadow: darkMode && "0 0 1rem 0 rgba(243, 243, 243, 0.2)",
-          backgroundColor: menuOpen ? "transparent" : "rgba(194, 194, 194, 0.26)",
+          backgroundColor: menuOpen
+            ? "transparent"
+            : "rgba(194, 194, 194, 0.26)",
           // backdropFilter: menuOpen && "unset",
         }}
       >
         {/* <IoMenu style={{color: darkMode && "white", height: "4em"}}/> */}
         <span
           className="m-line"
-          style={{ backgroundColor: darkMode && "white", transform: menuOpen && "rotate(-135deg) translate(-3px, -3px)" }}
+          style={{
+            backgroundColor: darkMode && "white",
+            transform: menuOpen && "rotate(-135deg) translate(-3px, -3px)",
+          }}
         ></span>
         <span
           className="m-line"
-          style={{ backgroundColor: darkMode && "white", display: menuOpen && "none" }}
+          style={{
+            backgroundColor: darkMode && "white",
+            display: menuOpen && "none",
+          }}
         ></span>
         <span
           className="m-line"
-          style={{ backgroundColor: darkMode && "white", transform: menuOpen && "rotate(135deg) translate(-3px, 3px)" }}
+          style={{
+            backgroundColor: darkMode && "white",
+            transform: menuOpen && "rotate(135deg) translate(-3px, 3px)",
+          }}
         ></span>
       </div>
       <div
@@ -70,21 +91,61 @@ const Toggle = () => {
         style={{
           width: menuOpen ? "100%" : "0",
           opacity: menuOpen ? "1" : "0",
-          backgroundColor: darkMode && "rgba(0, 0, 0, 0.459)"
+          backgroundColor: darkMode && "#333",
         }}
       >
         <ul className="m-list">
-          <li className="m-list-item" style={{ color: darkMode && "white" }}>
+          <li
+            className="m-list-item"
+            onMouseEnter={() => handleMouseEnter("home")}
+            onMouseLeave={handleMouseLeave}
+            style={{
+              color: darkMode && (isHover && activeLink==="home" ? "black" : "white"),
+              backgroundImage:
+                darkMode &&
+                "linear-gradient(120deg, transparent 0%, transparent 50%, #fff 50%)",
+            }}
+          >
             <AnchorLink href="#intro">Home</AnchorLink>
           </li>
-          <li className="m-list-item" style={{ color: darkMode && "white" }}>
-          <AnchorLink href="#about">About</AnchorLink>
+          <li
+            className="m-list-item"
+            onMouseEnter={() => handleMouseEnter("about")}
+            onMouseLeave={handleMouseLeave}
+            style={{
+              color: darkMode && (isHover && activeLink==="about" ? "black" : "white"),
+              backgroundImage:
+                darkMode &&
+                "linear-gradient(120deg, transparent 0%, transparent 50%, #fff 50%)",
+            }}
+          >
+            <AnchorLink href="#about">About</AnchorLink>
           </li>
-          <li className="m-list-item" style={{ color: darkMode && "white" }}>
-          <AnchorLink href="#portfolio">Portfolio</AnchorLink>
+          <li
+            className="m-list-item"
+            onMouseEnter={() => handleMouseEnter("portfolio")}
+            onMouseLeave={handleMouseLeave}
+            style={{
+              color: darkMode && (isHover && activeLink==="portfolio" ? "black" : "white"),
+              backgroundImage:
+                darkMode &&
+                "linear-gradient(120deg, transparent 0%, transparent 50%, #fff 50%)",
+            }}
+          >
+            <AnchorLink href="#portfolio">Portfolio</AnchorLink>
           </li>
-          <li className="m-list-item" style={{ color: darkMode && "white" }}>
-          <AnchorLink href="#contact-me">Contact</AnchorLink>
+          <li
+            className="m-list-item"
+            onMouseEnter={() => handleMouseEnter("contact")}
+            onMouseLeave={handleMouseLeave}
+            style={{
+              color: darkMode && (isHover && activeLink==="contact" ? "black" : "white"),
+              backgroundImage:
+                darkMode &&
+                "linear-gradient(120deg, transparent 0%, transparent 50%, #fff 50%)",
+            }}
+          >
+            <AnchorLink href="#contact-me">Contact</AnchorLink>
           </li>
         </ul>
       </nav>

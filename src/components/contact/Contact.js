@@ -68,7 +68,7 @@ const Contact = () => {
           </p>
           <form ref={formRef} onSubmit={handleSubmit} id="contact-form">
             <input
-              style={{ backgroundColor: darkMode && "#333" }}
+              style={{ backgroundColor: darkMode && "#333", color: darkMode && "#ddd"  }}
               type="text"
               placeholder="Your Name"
               name="user_name"
@@ -76,14 +76,14 @@ const Contact = () => {
             />
             {/* <input style={{backgroundColor: darkMode && "#333"}} type="text" placeholder="Subject" name="user_subject" /> */}
             <input
-              style={{ backgroundColor: darkMode && "#333" }}
+              style={{ backgroundColor: darkMode && "#333", color: darkMode && "#ddd" }}
               type="text"
               placeholder="Your Email"
               name="user_email"
               required
             />
             <textarea
-              style={{ backgroundColor: darkMode && "#333" }}
+              style={{ backgroundColor: darkMode && "#333", color: darkMode && "#ddd"  }}
               rows="5"
               placeholder="How Can I Help?"
               name="message"

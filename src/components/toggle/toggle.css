@@ -40,8 +40,8 @@ a {
   right: 0;
   z-index: 900;
 
-  background-color: rgba(255, 255, 255, 0.459);
-  backdrop-filter: blur(8px);
+  background-color: rgba(255, 255, 255);
+  /* backdrop-filter: blur(8px); */
   
   /* width: ${(props) => (props.clicked ? "100%" : "0")};
   opacity: ${(props) => (props.clicked ? "1" : "0")}; */
