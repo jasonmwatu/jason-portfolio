@@ -69,6 +69,7 @@ const Toggle = () => {
         style={{
           width: menuOpen ? "100%" : "0",
           opacity: menuOpen ? "1" : "0",
+          backgroundColor: darkMode && "rgba(0, 0, 0, 0.459)"
         }}
       >
         <ul className="m-list">
