@@ -39,6 +39,9 @@
   font-weight: 300;
   width: 70%;
 }
+.c-info-item > a:hover {
+  text-decoration: underline;
+}
 
 .c-icon {
   width: 30px;
