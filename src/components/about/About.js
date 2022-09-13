@@ -32,14 +32,14 @@ const About = () => {
           professional services range from pre-launch to production to
           maintenance.
         </p>
-        <br />
+        {/* <br />
         <p className="a-desc">
           I will help make your product a success by creating engaging websites
           and great-looking mobile apps that convert visitors into loyal
           customers. I guarantee to deliver websites with an intuitive design,
           easy navigation and a solid structure to meet the needs of both
           private and corporate businesses.
-        </p>
+        </p> */}
       </div>
     </div>
   );
