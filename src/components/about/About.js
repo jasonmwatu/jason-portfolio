@@ -26,11 +26,11 @@ const About = () => {
         <p className="a-desc">
           I have extensive training and experience as a web developer, designer
           and UI/UX expert. My skills are based on my own career path which has
-          taken me from developing simple calculator games to a fully-fledged
-          full-stack web apps. I specialize in website development, mobile app
-          development and user interface design for online stores. My
-          professional services range from pre-launch to production to
-          maintenance.
+          taken me from developing simple calculator games to designing and
+          creating fully-fledged full-stack web apps. I specialize in website
+          development, mobile app development and user interface design for
+          online stores. My professional services range from pre-launch to
+          production to maintenance.
         </p>
         {/* <br />
         <p className="a-desc">
