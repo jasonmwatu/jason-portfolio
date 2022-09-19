@@ -7,7 +7,7 @@ function Intro() {
   const darkMode = useSelector(state => state.ui.darkMode);
 
   return (
-    <div className="i" id="intro">
+    <section className="i" id="intro">
       <div className="i-left">
         <div className="i-left-wrapper">
           <h2 className="i-intro">Hello, My name is</h2>
@@ -103,7 +103,7 @@ function Intro() {
         </div>
       
       </div>
-    </div>
+    </section>
   );
 }
 

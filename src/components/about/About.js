@@ -3,7 +3,7 @@ import about from "../../img/about.jpg";
 
 const About = () => {
   return (
-    <div className="a" id="about">
+    <section className="a" id="about">
       <div className="a-left">
         <div className="a-card bg"></div>
         <div className="a-card">
@@ -41,7 +41,7 @@ const About = () => {
           private and corporate businesses.
         </p> */}
       </div>
-    </div>
+    </section>
   );
 };
 
