@@ -72,7 +72,7 @@ const Toggle = () => {
           }}
         ></span>
       </div>
-      <div className="m-text"><span style={{color: darkMode && "white"}}>Menu</span></div>
+      <div className="m-text"><span style={{color: darkMode && "white", textShadow:  darkMode && "0 0 7px #0f0f0f"}}>Menu</span></div>
       <div
         className="t"
         style={{ boxShadow: darkMode && "0 0 1rem 0 rgba(243, 243, 243, 0.2)" }}
@@ -85,7 +85,7 @@ const Toggle = () => {
           style={{ left: darkMode ? 0 : 25 }}
         ></div>
       </div>
-      <div className="t-text"><span style={{color: darkMode && "white"}}>{darkMode ?"Light":"Dark"} Mode</span></div>
+      <div className="t-text"><span style={{color: darkMode && "white", textShadow:  darkMode && "0 0 7px #0f0f0f"}}>{darkMode ?"Light":"Dark"} Mode</span></div>
       {/* navigation main body starts*/}
       <nav
         className="m-nav"

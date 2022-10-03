@@ -27,10 +27,12 @@
   z-index: 600;
   align-items: center;
   justify-content: center;
-  cursor: pointer;
+  /* cursor: pointer; */
   font-size: 24px;
   font-weight: 600;
   color: rgb(77, 77, 77);
+  text-shadow:  0 0 5px #e6e6e6dc;
+  /* 0 0 2px #e6e6e6dc, #0f0f0fd3;*/
 }
 .m-line {
   border-radius: 4px;
@@ -138,10 +140,11 @@ a {
   z-index: 600;
   align-items: center;
   justify-content: center;
-  cursor: pointer;
+  /* cursor: pointer; */
   font-size: 24px;
   font-weight: 600;
   color: rgb(77, 77, 77);
+  text-shadow:  0 0 5px #e6e6e6dc;
 }
 .t:hover {
   border: 2px solid #999;
