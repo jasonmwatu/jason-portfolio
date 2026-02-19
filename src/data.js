@@ -14,7 +14,7 @@ export const products = [
   },
   {
     id: 3,
-    img: "",
+    img: null,
     link: "#",
   },
   // {

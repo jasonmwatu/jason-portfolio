@@ -54,10 +54,10 @@
 }
 
 .c-status {
-  background-color: yellow;
+  background-color: #226fdf;
   margin-top: 16px;
   padding: 8px;
-  width: 25%;
+  width: fit-content;
   color: black;
 }
 

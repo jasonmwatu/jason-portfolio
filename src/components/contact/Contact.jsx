@@ -4,7 +4,7 @@ import Email from "../../img/email.png";
 import Address from "../../img/address.png";
 import { Icon } from "@iconify/react";
 import { useRef, useState } from "react";
-import emailjs from "emailjs-com";
+import emailjs from "@emailjs/browser";
 // import { ThemeContext } from "../../context";
 import { useSelector } from "react-redux";
 
@@ -22,12 +22,9 @@ const Contact = () => {
     setDone(false);
     setLoading(true);
     emailjs
-      .sendForm(
-        "service_dbui85p",
-        "template_nkcsaj7",
-        formRef.current,
-        "Lwt4S0Zz1wtc5QhHn",
-      )
+      .sendForm("service_dbui85p", "template_nkcsaj7", formRef.current, {
+        publicKey: "Lwt4S0Zz1wtc5QhHn",
+      })
       .then(
         (result) => {
           console.log(result);
@@ -54,7 +51,7 @@ const Contact = () => {
                 icon="line-md:phone-call-loop"
                 width="36"
                 height="36"
-                style={{ color: "226fdf", marginRight: "16px" }}
+                style={{ color: "#226fdf", marginRight: "16px" }}
               />
               +254 111 243 002
             </div>
@@ -64,7 +61,7 @@ const Contact = () => {
                 icon="line-md:email-opened"
                 width="36"
                 height="36"
-                style={{ color: "226fdf", marginRight: "16px" }}
+                style={{ color: "#226fdf", marginRight: "16px" }}
               />
               <a href="mailto:jasonmwatu@gmail.com">jasonmwatu@gmail.com</a>
             </div>
@@ -74,7 +71,7 @@ const Contact = () => {
                 icon="line-md:map-marker-alt-loop"
                 width="36"
                 height="36"
-                style={{ color: "226fdf", marginRight: "16px" }}
+                style={{ color: "#226fdf", marginRight: "16px" }}
               />
               Nairobi, Kenya
             </div>
