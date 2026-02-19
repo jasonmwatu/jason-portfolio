@@ -13,24 +13,24 @@ const About = () => {
       <div className="a-right">
         <h1 className="a-title">About Me</h1>
         <p className="a-sub">
-          I am an IT and programming enthusiast. I like to look for solutions
-          and enjoy solving tasking challenges.
+          I’m a web developer who enjoys turning ideas into clean, usable
+          websites. I like figuring things out, solving problems, and building
+          things that actually work well for real people.
         </p>
         <p className="a-desc">
-          I view myself as an avid and enthusiastic learner. I value creativity,
-          hard-work and I am persistent in the quest for personal and group
-          excellence. I am always willing to try different ideas and ways of
-          doing things when the need arises.
+          I’ve worked on a wide range of projects, from simple pages to more
+          complete websites, and I enjoy being involved in the whole process.
+          This includes shaping how things look, organizing how everything fits
+          together, and making sure the final result feels smooth and intuitive
+          for the user. I like keeping things simple, thoughtful, and
+          purpose-driven.
         </p>
         <br />
         <p className="a-desc">
-          I have extensive training and experience as a web developer, designer
-          and UI/UX expert. My skills are based on my own career path which has
-          taken me from developing simple calculator games to designing and
-          creating fully-fledged full-stack web apps. I specialize in website
-          development, mobile app development and user interface design for
-          online stores. My professional services range from pre-launch to
-          production to maintenance.
+          I’m naturally curious and always learning, whether that means trying
+          new ideas or finding better ways to approach a problem. I value
+          creativity, consistency, and putting care into my work, and I enjoy
+          collaborating with others to build things we can be proud of.
         </p>
         {/* <br />
         <p className="a-desc">

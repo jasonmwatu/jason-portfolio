@@ -1,4 +1,5 @@
 import JWS from './img/jws2.jpg'
+import POPS from './img/pops.webp'
 
 export const products = [
   {
@@ -8,8 +9,8 @@ export const products = [
   },
   {
     id: 2,
-    img: "",
-    link: "#",
+    img: POPS,
+    link: "https://popsadventure.co.ke/",
   },
   {
     id: 3,

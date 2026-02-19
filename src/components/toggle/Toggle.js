@@ -72,20 +72,35 @@ const Toggle = () => {
           }}
         ></span>
       </div>
-      <div className="m-text"><span style={{color: darkMode && "white", textShadow:  darkMode && "0 0 7px #0f0f0f"}}>Menu</span></div>
+      <div className="m-text">
+        <span
+          style={{
+            color: darkMode && "white",
+            textShadow: darkMode && "0 0 7px #0f0f0f",
+          }}
+        >
+          Menu
+        </span>
+      </div>
       <div
         className="t"
+        onClick={toggleDarkMode}
         style={{ boxShadow: darkMode && "0 0 1rem 0 rgba(243, 243, 243, 0.2)" }}
       >
         <img src={Sun} alt="light mode toggle" className="t-icon" />
         <img src={Moon} alt="dark mode toggle" className="t-icon" />
-        <div
-          className="t-button"
-          onClick={toggleDarkMode}
-          style={{ left: darkMode ? 0 : 25 }}
-        ></div>
+        <div className="t-button" style={{ left: darkMode ? 0 : 25 }}></div>
       </div>
-      <div className="t-text"><span style={{color: darkMode && "white", textShadow:  darkMode && "0 0 7px #0f0f0f"}}>{darkMode ?"Light":"Dark"} Mode</span></div>
+      <div className="t-text">
+        <span
+          style={{
+            color: darkMode && "white",
+            textShadow: darkMode && "0 0 7px #0f0f0f",
+          }}
+        >
+          {darkMode ? "Light" : "Dark"} Mode
+        </span>
+      </div>
       {/* navigation main body starts*/}
       <nav
         className="m-nav"
@@ -102,32 +117,23 @@ const Toggle = () => {
             // onMouseEnter={() => handleMouseEnter("home")}
             // onMouseLeave={handleMouseLeave}
             // style={{
-              // color: darkMode && (isHover && activeLink==="home" ? "black" : "white"),
-              // color: darkMode && "white",
-              // backgroundImage:
-              //   darkMode &&
-              //   "linear-gradient(120deg, transparent 0%, transparent 50%, #fff 50%)",
+            // color: darkMode && (isHover && activeLink==="home" ? "black" : "white"),
+            // color: darkMode && "white",
+            // backgroundImage:
+            //   darkMode &&
+            //   "linear-gradient(120deg, transparent 0%, transparent 50%, #fff 50%)",
             // }}
-            style={{color: darkMode && "white"}}
+            style={{ color: darkMode && "white" }}
           >
             <AnchorLink href="#intro">Home</AnchorLink>
           </li>
-          <li
-            className="m-list-item"
-            style={{color: darkMode && "white"}}
-          >
+          <li className="m-list-item" style={{ color: darkMode && "white" }}>
             <AnchorLink href="#about">About</AnchorLink>
           </li>
-          <li
-            className="m-list-item"
-            style={{color: darkMode && "white"}}
-          >
+          <li className="m-list-item" style={{ color: darkMode && "white" }}>
             <AnchorLink href="#portfolio">Portfolio</AnchorLink>
           </li>
-          <li
-            className="m-list-item"
-            style={{color: darkMode && "white"}}
-          >
+          <li className="m-list-item" style={{ color: darkMode && "white" }}>
             <AnchorLink href="#contact-me">Contact</AnchorLink>
           </li>
         </ul>

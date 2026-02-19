@@ -16,8 +16,8 @@ const App = () => {
   return (
     <div
       style={{
-        backgroundColor: darkMode ? "#222" : "white",
-        color: darkMode && "white",
+        backgroundColor: darkMode ? "#222" : "#F9FAFB",
+        color: darkMode && "#F9FAFB",
       }}
     >
       <Toggle />

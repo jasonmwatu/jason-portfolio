@@ -2,6 +2,7 @@ import "./contact.css";
 import Phone from "../../img/phone.png";
 import Email from "../../img/email.png";
 import Address from "../../img/address.png";
+import { Icon } from "@iconify/react";
 import { useRef, useState } from "react";
 import emailjs from "emailjs-com";
 // import { ThemeContext } from "../../context";
@@ -25,7 +26,7 @@ const Contact = () => {
         "service_dbui85p",
         "template_nkcsaj7",
         formRef.current,
-        "Lwt4S0Zz1wtc5QhHn"
+        "Lwt4S0Zz1wtc5QhHn",
       )
       .then(
         (result) => {
@@ -36,7 +37,7 @@ const Contact = () => {
         (error) => {
           console.log(error.text);
           setLoading(false);
-        }
+        },
       );
   };
 
@@ -48,15 +49,33 @@ const Contact = () => {
           <h1 className="c-title">Let's discuss your project</h1>
           <div className="c-info">
             <div className="c-info-item">
-              <img src={Phone} alt="" className="c-icon" />
-              +254 721 946 371
+              {/* <img src={Phone} alt="" className="c-icon" /> */}
+              <Icon
+                icon="line-md:phone-call-loop"
+                width="36"
+                height="36"
+                style={{ color: "226fdf", marginRight: "16px" }}
+              />
+              +254 111 243 002
             </div>
             <div className="c-info-item">
-              <img className="c-icon" src={Email} alt="" />
+              {/* <img className="c-icon" src={Email} alt="" /> */}
+              <Icon
+                icon="line-md:email-opened"
+                width="36"
+                height="36"
+                style={{ color: "226fdf", marginRight: "16px" }}
+              />
               <a href="mailto:jasonmwatu@gmail.com">jasonmwatu@gmail.com</a>
             </div>
             <div className="c-info-item">
-              <img className="c-icon" src={Address} alt="" />
+              {/* <img className="c-icon" src={Address} alt="" /> */}
+              <Icon
+                icon="line-md:map-marker-alt-loop"
+                width="36"
+                height="36"
+                style={{ color: "226fdf", marginRight: "16px" }}
+              />
               Nairobi, Kenya
             </div>
           </div>
@@ -68,7 +87,10 @@ const Contact = () => {
           </p>
           <form ref={formRef} onSubmit={handleSubmit} id="contact-form">
             <input
-              style={{ backgroundColor: darkMode && "#333", color: darkMode && "#ddd"  }}
+              style={{
+                backgroundColor: darkMode && "#333",
+                color: darkMode && "#ddd",
+              }}
               type="text"
               placeholder="Your Name"
               name="user_name"
@@ -76,14 +98,20 @@ const Contact = () => {
             />
             {/* <input style={{backgroundColor: darkMode && "#333"}} type="text" placeholder="Subject" name="user_subject" /> */}
             <input
-              style={{ backgroundColor: darkMode && "#333", color: darkMode && "#ddd" }}
+              style={{
+                backgroundColor: darkMode && "#333",
+                color: darkMode && "#ddd",
+              }}
               type="text"
               placeholder="Your Email"
               name="user_email"
               required
             />
             <textarea
-              style={{ backgroundColor: darkMode && "#333", color: darkMode && "#ddd"  }}
+              style={{
+                backgroundColor: darkMode && "#333",
+                color: darkMode && "#ddd",
+              }}
               rows="5"
               placeholder="How Can I Help?"
               name="message"
