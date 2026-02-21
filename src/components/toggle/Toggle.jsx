@@ -98,7 +98,7 @@ const Toggle = () => {
             textShadow: darkMode && "0 0 7px #0f0f0f",
           }}
         >
-          {darkMode ? "Light" : "Dark"} Mode
+          Change to {darkMode ? "Light" : "Dark"} Mode
         </span>
       </div>
       {/* navigation main body starts*/}
