@@ -3,6 +3,7 @@ import AnchorLink from "react-anchor-link-smooth-scroll";
 import "./toggle.css";
 import Sun from "../../img/sun.png";
 import Moon from "../../img/moon.png";
+import { Icon } from "@iconify/react";
 // import HamburgerMenu from "./Hamburger";
 // import { useContext } from "react";
 // import { ThemeContext } from "../../context";
@@ -87,8 +88,20 @@ const Toggle = () => {
         onClick={toggleDarkMode}
         style={{ boxShadow: darkMode && "0 0 1rem 0 rgba(243, 243, 243, 0.2)" }}
       >
-        <img src={Sun} alt="light mode toggle" className="t-icon" />
-        <img src={Moon} alt="dark mode toggle" className="t-icon" />
+        {/* <img src={Sun} alt="light mode toggle" className="t-icon" />
+        <img src={Moon} alt="dark mode toggle" className="t-icon" /> */}
+        <Icon
+          icon="line-md:moon-filled-alt-to-sunny-filled-loop-transition"
+          width="18"
+          height="18"
+          style={{ color: "#56B281" }}
+        />
+        <Icon
+          icon="line-md:sunny-filled-loop-to-moon-filled-alt-loop-transition"
+          width="18"
+          height="18"
+          style={{ color: "#56B281" }}
+        />
         <div className="t-button" style={{ left: darkMode ? 0 : 25 }}></div>
       </div>
       <div className="t-text">

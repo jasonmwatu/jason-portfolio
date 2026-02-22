@@ -54,12 +54,25 @@
 }
 
 .c-status {
-  background-color: #226fdf;
+  /* background-color: #56B281; */
   margin-top: 16px;
-  padding: 8px;
+  padding: 8px 0px;
+  font-size: 12px;
+  font-weight: 300;
   width: fit-content;
-  color: black;
+  color: #56B281;
 }
+
+.c-error {
+  /* background-color: #56B281; */
+  margin-top: 16px;
+  padding: 8px 0px;
+  font-size: 12px;
+  font-weight: 300;
+  width: fit-content;
+  color: #8156B2;
+}
+
 
 form {
   margin-top: 20px;
@@ -127,6 +140,9 @@ button {
     margin-top: 10px;
   }
   .c-status{
+    margin-left: 16px;
+  }
+  .c-error{
     margin-left: 16px;
   }
   .c {
